@@ -1,0 +1,17 @@
+# Netlify configuration file
+
+[build]
+  # Command to build the project
+  command = "yarn build"
+  
+  # Directory to publish (Vite's default build output)
+  publish = "dist"
+
+[build.environment]
+  # Set the Node.js version for the build environment
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
